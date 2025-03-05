@@ -1,0 +1,762 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles 
+Typography -
+    Roboto : normal , bold and bolder
+
+Colour Scheme -
+
+#E4F6F5 - Background Colour
+#272343 - Headings Colour
+#FFDA05 - Buttons Colour
+#000000 - Text Colour
+#F4F4F4 - Text on Buttons Colour
+  */
+
+html {
+    scroll-behavior: smooth;
+  }
+   
+body{
+    font-family: source sans pro;
+    line-height: 1.6;
+  }
+
+h1, h2 {
+    color:#272343;
+    text-transform: uppercase;
+    font-weight:bolder;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+h3{
+    color:#272343;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Social Media Icons*/
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  color: #272343;
+  opacity: 0.7;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: #FFDA05;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: #FFDA05;
+}
+
+/* Instagram */
+.fa-instagram {
+  color: #FFDA05;
+}
+
+/* Pintrest */
+.fa-pinterest {
+  color: #FFDA05;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color:#E4F6F5;
+    padding: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .navbar a{
+    color: #272343;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: #FFDA05;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hero section  */
+.section1 {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Background Image */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 700px; 
+}
+
+/* Button */
+button {
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #FFDA05;
+    color: #272343;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #272343;
+    color: white;
+}
+
+/* Search Recipes Section  */
+.section2{
+    width: 100%;
+    background-color: #E4F6F5;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+
+input{
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+}
+
+/* The owner section  */
+.section3{
+    width: 100%;
+    background-color: #E4F6F5;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.section3 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Foodie Ratings section  */
+
+/* Section Container */
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Container to Hold Table & Slideshow */
+.food-table-container {
+    display: flex;
+    gap: 30px; 
+    max-width: 1200px; 
+}
+
+/* Table Styles */
+.food-table {
+    flex: 1; 
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #FFDA05;
+    color: #272343;
+}
+
+/* Slideshow */
+.slide-show {
+    flex: 1; 
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.slide-show img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Foodie Spotlight */
+.section5 {
+    width: 100%;
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #E4F6F5;
+}
+
+.foodie-spotlight {
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto;
+}
+
+.food-image-text {
+    display: flex; /* Align image and text side by side */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 30px; /* Space below the text/image block */
+}
+
+/* Image Styling */
+.food-image {
+    border-radius: 50%; /* Circular image */
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+}
+
+/* Text Styling */
+.food-image-text p {
+    max-width: 600px; /* Limits the width of the text */
+    text-align: left; /* Aligns text to the left */
+    color: #333; /* Dark text for better readability */
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    max-width: 800px; /* Limits video width */
+    margin-bottom: 20px; /* Space below the video */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section5 button {
+    padding: 12px 25px;
+    background-color: #FFDA05;
+    color: #272343;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto; /* Center the button */
+}
+
+/* Slideshow  */
+.checked {
+    color: orange;
+  }
+
+/* Web Cards Container */
+
+.section6 {
+    width: 100%;
+    padding: 20px;
+}
+
+.section6 button {
+    padding: 12px 25px ;
+    background-color: #FFDA05;
+    color: #272343;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto; /
+}
+
+.section6 button:hover {
+    background-color: #272343;
+    color: white;
+}
+
+.section6 h3{
+    text-align: center;
+}
+
+.card-content{
+    text-align: center;
+    margin-top: 20px;
+    max-width: 1200px;
+
+}
+
+.web-cards {
+    display: flex; 
+    overflow-x: auto;
+    gap: 15px; 
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    white-space: nowrap; 
+}
+
+.section7{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #E4F6F5;
+    text-align: center;
+}
+
+.section8{
+    width: auto;
+    padding: 20px;
+    background-color: #E4F6F5;
+    text-align: center;
+    align-items: center;
+}
+
+.section8 iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.section9{
+    width: 100%;
+    padding: 20px;
+    background-color: #E4F6F5;
+    text-align: center;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Cookie Popup */
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    padding: 10px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  .cookie-popup button {
+    padding: 10px;
+    background-color: #FFDA05;
+    color:#272343;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .cookie-popup button:hover{
+    background-color: #272343;
+    color: white;
+  }
+
+
+/* Blog page  */
+.section-1{
+  background-color: #E4F6F5;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-1 p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-1 img{
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-2{
+    background-color: #E4F6F5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-2 p{
+      max-width: 600px;
+      margin: 0 auto;
+  }
+  
+  .section-2 img{
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Slideshow container */
+.mySlides img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+  }
+  
+  .slideshow-container {
+    max-width: 100%px;
+    height: auto; 
+    position: relative;
+    margin: auto;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%; 
+    }
+  
+    .mySlides img {
+        height: 300px; 
+  }
+  }
+
+  /* Section 4 blog  */
+  
+  .section-4 {
+    width: 100%;
+    padding: 20px;
+}
+
+.section-4 p{
+    text-align: center;
+}
+
+.section-4 button {
+    padding: 12px 25px ;
+    background-color: #FFDA05;
+    color: #272343;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto; /
+}
+
+.section-4 button:hover {
+    background-color: #272343;
+    color: white;
+}
+
+.section-4 h3{
+    text-align: center;
+}
+
+.card-content-2{
+    text-align: center;
+    margin-top: 20px;
+    max-width: 120px;
+}
+
+.web-cards-2 img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.web-cards-2{
+    display: flex; 
+    overflow-x: auto;
+    gap: 15px; 
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    white-space: nowrap; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact page  */
+
+.contact-section-1{
+    background-color: #E4F6F5;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272343;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .food-image-text {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        align-items: center; /* Center content vertically */
+    }
+
+    .food-image {
+        width: 250px; /* Smaller image size on mobile */
+        height: 250px;
+    }
+
+    .food-image-text p {
+        text-align: center; /* Center text on mobile */
+        max-width: 90%; /* Allow text to take up more width */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .food-table-container {
+        flex-direction: column; /* Stack the table and slideshow on small screens */
+        align-items: center;
+    }
+
+    .food-table, .slide-show {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text {
+        width: 90%; /* Make text fit smaller screens */
+        font-size: 0.9rem;
+    }
+}
